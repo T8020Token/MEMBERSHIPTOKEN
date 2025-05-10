@@ -1,13 +1,8 @@
 {
-  "/_error": "pages/_error.js",
-  "/api/factcheck": "pages/api/factcheck.js",
   "/_app": "pages/_app.js",
-  "/api/geolocation": "pages/api/geolocation.js",
-  "/api/news": "pages/api/news.js",
-  "/api/subscription": "pages/api/subscription.js",
-  "/api/weather": "pages/api/weather.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
   "/": "pages/index.js",
   "/login": "pages/login.js",
-  "/signup": "pages/signup.js",
-  "/_document": "pages/_document.js"
+  "/signup": "pages/signup.js"
 }

@@ -1,138 +1,92 @@
 "use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 616;
-exports.ids = [616];
+exports.id = "pages/signup";
+exports.ids = ["pages/signup"];
 exports.modules = {
 
-/***/ 266:
+/***/ "./lib/auth.js":
+/*!*********************!*\
+  !*** ./lib/auth.js ***!
+  \*********************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Signup)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(689);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _lib_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(835);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(853);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_lib_auth__WEBPACK_IMPORTED_MODULE_2__]);
-_lib_auth__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
-
-
-
-
-function Signup() {
-    const { 0: email , 1: setEmail  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("");
-    const { 0: password , 1: setPassword  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("");
-    const { signup  } = (0,_lib_auth__WEBPACK_IMPORTED_MODULE_2__/* .useAuth */ .a)();
-    const router = (0,next_router__WEBPACK_IMPORTED_MODULE_3__.useRouter)();
-    const handleSignup = async (e)=>{
-        e.preventDefault();
-        try {
-            await signup(email, password);
-            router.push("/");
-        } catch (error) {
-            alert("Signup failed: " + error.message);
-        }
-    };
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-        className: "flex items-center justify-center h-screen",
-        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-            className: "bg-white p-8 rounded shadow-md w-96",
-            children: [
-                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
-                    className: "text-2xl font-bold mb-4",
-                    children: "Sign Up for T8020 News"
-                }),
-                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("form", {
-                    onSubmit: handleSignup,
-                    children: [
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
-                            type: "email",
-                            placeholder: "Email",
-                            value: email,
-                            onChange: (e)=>setEmail(e.target.value),
-                            className: "w-full p-2 mb-4 border rounded",
-                            required: true
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
-                            type: "password",
-                            placeholder: "Password",
-                            value: password,
-                            onChange: (e)=>setPassword(e.target.value),
-                            className: "w-full p-2 mb-4 border rounded",
-                            required: true
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                            type: "submit",
-                            className: "w-full bg-blue-500 text-white p-2 rounded",
-                            children: "Sign Up"
-                        })
-                    ]
-                }),
-                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                    className: "mt-4",
-                    children: [
-                        "Already have an account?",
-                        " ",
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                            className: "text-blue-500 cursor-pointer",
-                            onClick: ()=>router.push("/login"),
-                            children: "Login"
-                        })
-                    ]
-                })
-            ]
-        })
-    });
-}
-
-__webpack_async_result__();
-} catch(e) { __webpack_async_result__(e); } });
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"AuthProvider\": () => (/* binding */ AuthProvider),\n/* harmony export */   \"useAuth\": () => (/* binding */ useAuth)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var firebase_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebase/auth */ \"firebase/auth\");\n/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! firebase/app */ \"firebase/app\");\n/* harmony import */ var firebase_firestore__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! firebase/firestore */ \"firebase/firestore\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([firebase_auth__WEBPACK_IMPORTED_MODULE_2__, firebase_app__WEBPACK_IMPORTED_MODULE_3__, firebase_firestore__WEBPACK_IMPORTED_MODULE_4__]);\n([firebase_auth__WEBPACK_IMPORTED_MODULE_2__, firebase_app__WEBPACK_IMPORTED_MODULE_3__, firebase_firestore__WEBPACK_IMPORTED_MODULE_4__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);\n\n\n\n\n\nconst firebaseConfig = {\n    apiKey: \"AIzaSyCKU1acHcpNzOLiZKOwYXkZYUrLh-Pr6rM\",\n    authDomain: \"t8020-news.firebaseapp.com\",\n    projectId: \"t8020-news\"\n};\nconst app = (0,firebase_app__WEBPACK_IMPORTED_MODULE_3__.initializeApp)(firebaseConfig);\nconst auth = (0,firebase_auth__WEBPACK_IMPORTED_MODULE_2__.getAuth)(app);\nconst db = (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_4__.getFirestore)(app);\nconst AuthContext = /*#__PURE__*/ (0,react__WEBPACK_IMPORTED_MODULE_1__.createContext)();\nfunction AuthProvider({ children  }) {\n    const { 0: user , 1: setUser  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);\n    const { 0: isSubscribed , 1: setIsSubscribed  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);\n    const { 0: city , 1: setCity  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(\"New York\");\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{\n        const unsubscribe = (0,firebase_auth__WEBPACK_IMPORTED_MODULE_2__.onAuthStateChanged)(auth, async (firebaseUser)=>{\n            if (firebaseUser) {\n                const userDoc = await (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_4__.getDoc)((0,firebase_firestore__WEBPACK_IMPORTED_MODULE_4__.doc)(db, \"users\", firebaseUser.uid));\n                setUser(firebaseUser);\n                setIsSubscribed(userDoc.data()?.isSubscribed || false);\n            } else {\n                setUser(null);\n                setIsSubscribed(false);\n            }\n        });\n        return unsubscribe;\n    }, []);\n    const signup = async (email, password)=>{\n        const userCredential = await (0,firebase_auth__WEBPACK_IMPORTED_MODULE_2__.createUserWithEmailAndPassword)(auth, email, password);\n        await fetch(\"/api/auth/signup\", {\n            method: \"POST\",\n            headers: {\n                \"Content-Type\": \"application/json\"\n            },\n            body: JSON.stringify({\n                email,\n                password\n            })\n        });\n        return userCredential;\n    };\n    const login = async (email, password)=>{\n        return await (0,firebase_auth__WEBPACK_IMPORTED_MODULE_2__.signInWithEmailAndPassword)(auth, email, password);\n    };\n    const logout = async ()=>{\n        await (0,firebase_auth__WEBPACK_IMPORTED_MODULE_2__.signOut)(auth);\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(AuthContext.Provider, {\n        value: {\n            user,\n            isSubscribed,\n            city,\n            setCity,\n            signup,\n            login,\n            logout\n        },\n        children: children\n    }, void 0, false, {\n        fileName: \"/workspaces/t8020-news/t8020-news/frontend/lib/auth.js\",\n        lineNumber: 56,\n        columnNumber: 2\n    }, this);\n}\nfunction useAuth() {\n    return (0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(AuthContext);\n}\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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QixPQUFPLEdBQUc7SUFDMUIsT0FBT3BELGlEQUFVLENBQUN3QixXQUFXLENBQUMsQ0FBQztBQUMvQixDQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vdDgwMjAtbmV3cy1mcm9udGVuZC8uL2xpYi9hdXRoLmpzPzI4N2IiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgY3JlYXRlQ29udGV4dCwgdXNlQ29udGV4dCwgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IGdldEF1dGgsIG9uQXV0aFN0YXRlQ2hhbmdlZCwgc2lnbkluV2l0aEVtYWlsQW5kUGFzc3dvcmQsIGNyZWF0ZVVzZXJXaXRoRW1haWxBbmRQYXNzd29yZCwgc2lnbk91dCB9IGZyb20gJ2ZpcmViYXNlL2F1dGgnO1xuaW1wb3J0IHsgaW5pdGlhbGl6ZUFwcCB9IGZyb20gJ2ZpcmViYXNlL2FwcCc7XG5pbXBvcnQgeyBnZXRGaXJlc3RvcmUsIGRvYywgZ2V0RG9jIH0gZnJvbSAnZmlyZWJhc2UvZmlyZXN0b3JlJztcblxuY29uc3QgZmlyZWJhc2VDb25maWcgPSB7XG5hcGlLZXk6IHByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX0ZJUkVCQVNFX0FQSV9LRVksXG5hdXRoRG9tYWluOiBwcm9jZXNzLmVudi5ORVhUX1BVQkxJQ19GSVJFQkFTRV9BVVRIX0RPTUFJTixcbnByb2plY3RJZDogcHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfRklSRUJBU0VfUFJPSkVDVF9JRCxcbn07XG5cbmNvbnN0IGFwcCA9IGluaXRpYWxpemVBcHAoZmlyZWJhc2VDb25maWcpO1xuY29uc3QgYXV0aCA9IGdldEF1dGgoYXBwKTtcbmNvbnN0IGRiID0gZ2V0RmlyZXN0b3JlKGFwcCk7XG5cbmNvbnN0IEF1dGhDb250ZXh0ID0gY3JlYXRlQ29udGV4dCgpO1xuXG5leHBvcnQgZnVuY3Rpb24gQXV0aFByb3ZpZGVyKHsgY2hpbGRyZW4gfSkge1xuY29uc3QgW3VzZXIsIHNldFVzZXJdID0gdXNlU3RhdGUobnVsbCk7XG5jb25zdCBbaXNTdWJzY3JpYmVkLCBzZXRJc1N1YnNjcmliZWRdID0gdXNlU3RhdGUoZmFsc2UpO1xuY29uc3QgW2NpdHksIHNldENpdHldID0gdXNlU3RhdGUoJ05ldyBZb3JrJyk7XG5cbnVzZUVmZmVjdCgoKSA9PiB7XG4gY29uc3QgdW5zdWJzY3JpYmUgPSBvbkF1dGhTdGF0ZUNoYW5nZWQoYXV0aCwgYXN5bmMgKGZpcmViYXNlVXNlcikgPT4ge1xuICAgaWYgKGZpcmViYXNlVXNlcikge1xuICAgICBjb25zdCB1c2VyRG9jID0gYXdhaXQgZ2V0RG9jKGRvYyhkYiwgJ3VzZXJzJywgZmlyZWJhc2VVc2VyLnVpZCkpO1xuICAgICBzZXRVc2VyKGZpcmViYXNlVXNlcik7XG4gICAgIHNldElzU3Vic2NyaWJlZCh1c2VyRG9jLmRhdGEoKT8uaXNTdWJzY3JpYmVkIHx8IGZhbHNlKTtcbiAgIH0gZWxzZSB7XG4gICAgIHNldFVzZXIobnVsbCk7XG4gICAgIHNldElzU3Vic2NyaWJlZChmYWxzZSk7XG4gICB9XG4gfSk7XG4gcmV0dXJuIHVuc3Vic2NyaWJlO1xufSwgW10pO1xuXG5jb25zdCBzaWdudXAgPSBhc3luYyAoZW1haWwsIHBhc3N3b3JkKSA9PiB7XG4gY29uc3QgdXNlckNyZWRlbnRpYWwgPSBhd2FpdCBjcmVhdGVVc2VyV2l0aEVtYWlsQW5kUGFzc3dvcmQoYXV0aCwgZW1haWwsIHBhc3N3b3JkKTtcbiBhd2FpdCBmZXRjaCgnL2FwaS9hdXRoL3NpZ251cCcsIHtcbiAgIG1ldGhvZDogJ1BPU1QnLFxuICAgaGVhZGVyczogeyAnQ29udGVudC1UeXBlJzogJ2FwcGxpY2F0aW9uL2pzb24nIH0sXG4gICBib2R5OiBKU09OLnN0cmluZ2lmeSh7IGVtYWlsLCBwYXNzd29yZCB9KSxcbiB9KTtcbiByZXR1cm4gdXNlckNyZWRlbnRpYWw7XG59O1xuXG5jb25zdCBsb2dpbiA9IGFzeW5jIChlbWFpbCwgcGFzc3dvcmQpID0+IHtcbiByZXR1cm4gYXdhaXQgc2lnbkluV2l0aEVtYWlsQW5kUGFzc3dvcmQoYXV0aCwgZW1haWwsIHBhc3N3b3JkKTtcbn07XG5cbmNvbnN0IGxvZ291dCA9IGFzeW5jICgpID0+IHtcbiBhd2FpdCBzaWduT3V0KGF1dGgpO1xufTtcblxucmV0dXJuIChcbiA8QXV0aENvbnRleHQuUHJvdmlkZXIgdmFsdWU9e3sgdXNlciwgaXNTdWJzY3JpYmVkLCBjaXR5LCBzZXRDaXR5LCBzaWdudXAsIGxvZ2luLCBsb2dvdXQgfX0+XG4gICB7Y2hpbGRyZW59XG4gPC9BdXRoQ29udGV4dC5Qcm92aWRlcj5cbik7XG59XG5cbmV4cG9ydCBmdW5jdGlvbiB1c2VBdXRoKCkge1xucmV0dXJuIHVzZUNvbnRleHQoQXV0aENvbnRleHQpO1xufSJdLCJuYW1lcyI6WyJjcmVhdGVDb250ZXh0IiwidXNlQ29udGV4dCIsInVzZUVmZmVjdCIsInVzZVN0YXRlIiwiZ2V0QXV0aCIsIm9uQXV0aFN0YXRlQ2hhbmdlZCIsInNpZ25JbldpdGhFbWFpbEFuZFBhc3N3b3JkIiwiY3JlYXRlVXNlcldpdGhFbWFpbEFuZFBhc3N3b3JkIiwic2lnbk91dCIsImluaXRpYWxpemVBcHAiLCJnZXRGaXJlc3RvcmUiLCJkb2MiLCJnZXREb2MiLCJmaXJlYmFzZUNvbmZpZyIsImFwaUtleSIsInByb2Nlc3MiLCJlbnYiLCJORVhUX1BVQkxJQ19GSVJFQkFTRV9BUElfS0VZIiwiYXV0aERvbWFpbiIsIk5FWFRfUFVCTElDX0ZJUkVCQVNFX0FVVEhfRE9NQUlOIiwicHJvamVjdElkIiwiTkVYVF9QVUJMSUNfRklSRUJBU0VfUFJPSkVDVF9JRCIsImFwcCIsImF1dGgiLCJkYiIsIkF1dGhDb250ZXh0IiwiQXV0aFByb3ZpZGVyIiwiY2hpbGRyZW4iLCJ1c2VyIiwic2V0VXNlciIsImlzU3Vic2NyaWJlZCIsInNldElzU3Vic2NyaWJlZCIsImNpdHkiLCJzZXRDaXR5IiwidW5zdWJzY3JpYmUiLCJmaXJlYmFzZVVzZXIiLCJ1c2VyRG9jIiwidWlkIiwiZGF0YSIsInNpZ251cCIsImVtYWlsIiwicGFzc3dvcmQiLCJ1c2VyQ3JlZGVudGlhbCIsImZldGNoIiwibWV0aG9kIiwiaGVhZGVycyIsImJvZHkiLCJKU09OIiwic3RyaW5naWZ5IiwibG9naW4iLCJsb2dvdXQiLCJQcm92aWRlciIsInZhbHVlIiwidXNlQXV0aCJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./lib/auth.js\n");
 
 /***/ }),
 
-/***/ 853:
+/***/ "./pages/signup.js":
+/*!*************************!*\
+  !*** ./pages/signup.js ***!
+  \*************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Signup)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _lib_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../lib/auth */ \"./lib/auth.js\");\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ \"next/router\");\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_lib_auth__WEBPACK_IMPORTED_MODULE_2__]);\n_lib_auth__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\n\n\nfunction Signup() {\n    const { 0: email , 1: setEmail  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(\"\");\n    const { 0: password , 1: setPassword  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(\"\");\n    const { signup  } = (0,_lib_auth__WEBPACK_IMPORTED_MODULE_2__.useAuth)();\n    const router = (0,next_router__WEBPACK_IMPORTED_MODULE_3__.useRouter)();\n    const handleSignup = async (e)=>{\n        e.preventDefault();\n        try {\n            await signup(email, password);\n            router.push(\"/\");\n        } catch (error) {\n            alert(\"Signup failed: \" + error.message);\n        }\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: \"flex items-center justify-center h-screen\",\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            className: \"bg-white p-8 rounded shadow-md w-96\",\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h2\", {\n                    className: \"text-2xl font-bold mb-4\",\n                    children: \"Sign Up for T8020 News\"\n                }, void 0, false, {\n                    fileName: \"/workspaces/t8020-news/t8020-news/frontend/pages/signup.js\",\n                    lineNumber: 24,\n                    columnNumber: 6\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"form\", {\n                    onSubmit: handleSignup,\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                            type: \"email\",\n                            placeholder: \"Email\",\n                            value: email,\n                            onChange: (e)=>setEmail(e.target.value),\n                            className: \"w-full p-2 mb-4 border rounded\",\n                            required: true\n                        }, void 0, false, {\n                            fileName: \"/workspaces/t8020-news/t8020-news/frontend/pages/signup.js\",\n                            lineNumber: 26,\n                            columnNumber: 8\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                            type: \"password\",\n                            placeholder: \"Password\",\n                            value: password,\n                            onChange: (e)=>setPassword(e.target.value),\n                            className: \"w-full p-2 mb-4 border rounded\",\n                            required: true\n                        }, void 0, false, {\n                            fileName: \"/workspaces/t8020-news/t8020-news/frontend/pages/signup.js\",\n                            lineNumber: 34,\n                            columnNumber: 8\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                            type: \"submit\",\n                            className: \"w-full bg-blue-500 text-white p-2 rounded\",\n                            children: \"Sign Up\"\n                        }, void 0, false, {\n                            fileName: \"/workspaces/t8020-news/t8020-news/frontend/pages/signup.js\",\n                            lineNumber: 42,\n                            columnNumber: 8\n                        }, this)\n                    ]\n                }, void 0, true, {\n                    fileName: \"/workspaces/t8020-news/t8020-news/frontend/pages/signup.js\",\n                    lineNumber: 25,\n                    columnNumber: 6\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                    className: \"mt-4\",\n                    children: [\n                        \"Already have an account?\",\n                        \" \",\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                            className: \"text-blue-500 cursor-pointer\",\n                            onClick: ()=>router.push(\"/login\"),\n                            children: \"Login\"\n                        }, void 0, false, {\n                            fileName: \"/workspaces/t8020-news/t8020-news/frontend/pages/signup.js\",\n                            lineNumber: 48,\n                            columnNumber: 8\n                        }, this)\n                    ]\n                }, void 0, true, {\n                    fileName: \"/workspaces/t8020-news/t8020-news/frontend/pages/signup.js\",\n                    lineNumber: 46,\n                    columnNumber: 6\n                }, this)\n            ]\n        }, void 0, true, {\n            fileName: \"/workspaces/t8020-news/t8020-news/frontend/pages/signup.js\",\n            lineNumber: 23,\n            columnNumber: 4\n        }, this)\n    }, void 0, false, {\n        fileName: \"/workspaces/t8020-news/t8020-news/frontend/pages/signup.js\",\n        lineNumber: 22,\n        columnNumber: 2\n    }, this);\n}\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9zaWdudXAuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUFpQztBQUNLO0FBQ0U7QUFFekIsU0FBU0csTUFBTSxHQUFHO0lBQ2pDLE1BQU0sS0FBQ0MsS0FBSyxNQUFFQyxRQUFRLE1BQUlMLCtDQUFRLENBQUMsRUFBRSxDQUFDO0lBQ3RDLE1BQU0sS0FBQ00sUUFBUSxNQUFFQyxXQUFXLE1BQUlQLCtDQUFRLENBQUMsRUFBRSxDQUFDO0lBQzVDLE1BQU0sRUFBRVEsTUFBTSxHQUFFLEdBQUdQLGtEQUFPLEVBQUU7SUFDNUIsTUFBTVEsTUFBTSxHQUFHUCxzREFBUyxFQUFFO0lBRTFCLE1BQU1RLFlBQVksR0FBRyxPQUFPQyxDQUFDLEdBQUs7UUFDakNBLENBQUMsQ0FBQ0MsY0FBYyxFQUFFLENBQUM7UUFDbkIsSUFBSTtZQUNGLE1BQU1KLE1BQU0sQ0FBQ0osS0FBSyxFQUFFRSxRQUFRLENBQUMsQ0FBQztZQUM5QkcsTUFBTSxDQUFDSSxJQUFJLENBQUMsR0FBRyxDQUFDLENBQUM7UUFDbkIsRUFBRSxPQUFPQyxLQUFLLEVBQUU7WUFDZEMsS0FBSyxDQUFDLGlCQUFpQixHQUFHRCxLQUFLLENBQUNFLE9BQU8sQ0FBQyxDQUFDO1FBQzNDLENBQUM7SUFDRixDQUFDO0lBRUQscUJBQ0MsOERBQUNDLEtBQUc7UUFBQ0MsU0FBUyxFQUFDLDJDQUEyQztrQkFDeEQsNEVBQUNELEtBQUc7WUFBQ0MsU0FBUyxFQUFDLHFDQUFxQzs7OEJBQ2xELDhEQUFDQyxJQUFFO29CQUFDRCxTQUFTLEVBQUMseUJBQXlCOzhCQUFDLHdCQUFzQjs7Ozs7d0JBQUs7OEJBQ25FLDhEQUFDRSxNQUFJO29CQUFDQyxRQUFRLEVBQUVYLFlBQVk7O3NDQUMxQiw4REFBQ1ksT0FBSzs0QkFDSkMsSUFBSSxFQUFDLE9BQU87NEJBQ1pDLFdBQVcsRUFBQyxPQUFPOzRCQUNuQkMsS0FBSyxFQUFFckIsS0FBSzs0QkFDWnNCLFFBQVEsRUFBRSxDQUFDZixDQUFDLEdBQUtOLFFBQVEsQ0FBQ00sQ0FBQyxDQUFDZ0IsTUFBTSxDQUFDRixLQUFLLENBQUM7NEJBQ3pDUCxTQUFTLEVBQUMsZ0NBQWdDOzRCQUMxQ1UsUUFBUTs7Ozs7Z0NBQ1I7c0NBQ0YsOERBQUNOLE9BQUs7NEJBQ0pDLElBQUksRUFBQyxVQUFVOzRCQUNmQyxXQUFXLEVBQUMsVUFBVTs0QkFDdEJDLEtBQUssRUFBRW5CLFFBQVE7NEJBQ2ZvQixRQUFRLEVBQUUsQ0FBQ2YsQ0FBQyxHQUFLSixXQUFXLENBQUNJLENBQUMsQ0FBQ2dCLE1BQU0sQ0FBQ0YsS0FBSyxDQUFDOzRCQUM1Q1AsU0FBUyxFQUFDLGdDQUFnQzs0QkFDMUNVLFFBQVE7Ozs7O2dDQUNSO3NDQUNGLDhEQUFDQyxRQUFNOzRCQUFDTixJQUFJLEVBQUMsUUFBUTs0QkFBQ0wsU0FBUyxFQUFDLDJDQUEyQztzQ0FBQyxTQUU1RTs7Ozs7Z0NBQVM7Ozs7Ozt3QkFDSjs4QkFDUCw4REFBQ1ksR0FBQztvQkFBQ1osU0FBUyxFQUFDLE1BQU07O3dCQUFDLDBCQUNNO3dCQUFDLEdBQUc7c0NBQzVCLDhEQUFDYSxNQUFJOzRCQUFDYixTQUFTLEVBQUMsOEJBQThCOzRCQUFDYyxPQUFPLEVBQUUsSUFBTXZCLE1BQU0sQ0FBQ0ksSUFBSSxDQUFDLFFBQVEsQ0FBQztzQ0FBRSxPQUVyRjs7Ozs7Z0NBQU87Ozs7Ozt3QkFDTDs7Ozs7O2dCQUNBOzs7OztZQUNGLENBQ0w7QUFDRixDQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vdDgwMjAtbmV3cy1mcm9udGVuZC8uL3BhZ2VzL3NpZ251cC5qcz9jYThjIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IHsgdXNlQXV0aCB9IGZyb20gJy4uL2xpYi9hdXRoJztcbmltcG9ydCB7IHVzZVJvdXRlciB9IGZyb20gJ25leHQvcm91dGVyJztcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gU2lnbnVwKCkge1xuY29uc3QgW2VtYWlsLCBzZXRFbWFpbF0gPSB1c2VTdGF0ZSgnJyk7XG5jb25zdCBbcGFzc3dvcmQsIHNldFBhc3N3b3JkXSA9IHVzZVN0YXRlKCcnKTtcbmNvbnN0IHsgc2lnbnVwIH0gPSB1c2VBdXRoKCk7XG5jb25zdCByb3V0ZXIgPSB1c2VSb3V0ZXIoKTtcblxuY29uc3QgaGFuZGxlU2lnbnVwID0gYXN5bmMgKGUpID0+IHtcbiBlLnByZXZlbnREZWZhdWx0KCk7XG4gdHJ5IHtcbiAgIGF3YWl0IHNpZ251cChlbWFpbCwgcGFzc3dvcmQpO1xuICAgcm91dGVyLnB1c2goJy8nKTtcbiB9IGNhdGNoIChlcnJvcikge1xuICAgYWxlcnQoJ1NpZ251cCBmYWlsZWQ6ICcgKyBlcnJvci5tZXNzYWdlKTtcbiB9XG59O1xuXG5yZXR1cm4gKFxuIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgaC1zY3JlZW5cIj5cbiAgIDxkaXYgY2xhc3NOYW1lPVwiYmctd2hpdGUgcC04IHJvdW5kZWQgc2hhZG93LW1kIHctOTZcIj5cbiAgICAgPGgyIGNsYXNzTmFtZT1cInRleHQtMnhsIGZvbnQtYm9sZCBtYi00XCI+U2lnbiBVcCBmb3IgVDgwMjAgTmV3czwvaDI+XG4gICAgIDxmb3JtIG9uU3VibWl0PXtoYW5kbGVTaWdudXB9PlxuICAgICAgIDxpbnB1dFxuICAgICAgICAgdHlwZT1cImVtYWlsXCJcbiAgICAgICAgIHBsYWNlaG9sZGVyPVwiRW1haWxcIlxuICAgICAgICAgdmFsdWU9e2VtYWlsfVxuICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiBzZXRFbWFpbChlLnRhcmdldC52YWx1ZSl9XG4gICAgICAgICBjbGFzc05hbWU9XCJ3LWZ1bGwgcC0yIG1iLTQgYm9yZGVyIHJvdW5kZWRcIlxuICAgICAgICAgcmVxdWlyZWRcbiAgICAgICAvPlxuICAgICAgIDxpbnB1dFxuICAgICAgICAgdHlwZT1cInBhc3N3b3JkXCJcbiAgICAgICAgIHBsYWNlaG9sZGVyPVwiUGFzc3dvcmRcIlxuICAgICAgICAgdmFsdWU9e3Bhc3N3b3JkfVxuICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiBzZXRQYXNzd29yZChlLnRhcmdldC52YWx1ZSl9XG4gICAgICAgICBjbGFzc05hbWU9XCJ3LWZ1bGwgcC0yIG1iLTQgYm9yZGVyIHJvdW5kZWRcIlxuICAgICAgICAgcmVxdWlyZWRcbiAgICAgICAvPlxuICAgICAgIDxidXR0b24gdHlwZT1cInN1Ym1pdFwiIGNsYXNzTmFtZT1cInctZnVsbCBiZy1ibHVlLTUwMCB0ZXh0LXdoaXRlIHAtMiByb3VuZGVkXCI+XG4gICAgICAgICBTaWduIFVwXG4gICAgICAgPC9idXR0b24+XG4gICAgIDwvZm9ybT5cbiAgICAgPHAgY2xhc3NOYW1lPVwibXQtNFwiPlxuICAgICAgIEFscmVhZHkgaGF2ZSBhbiBhY2NvdW50P3snICd9XG4gICAgICAgPHNwYW4gY2xhc3NOYW1lPVwidGV4dC1ibHVlLTUwMCBjdXJzb3ItcG9pbnRlclwiIG9uQ2xpY2s9eygpID0+IHJvdXRlci5wdXNoKCcvbG9naW4nKX0+XG4gICAgICAgICBMb2dpblxuICAgICAgIDwvc3Bhbj5cbiAgICAgPC9wPlxuICAgPC9kaXY+XG4gPC9kaXY+XG4pO1xufSJdLCJuYW1lcyI6WyJ1c2VTdGF0ZSIsInVzZUF1dGgiLCJ1c2VSb3V0ZXIiLCJTaWdudXAiLCJlbWFpbCIsInNldEVtYWlsIiwicGFzc3dvcmQiLCJzZXRQYXNzd29yZCIsInNpZ251cCIsInJvdXRlciIsImhhbmRsZVNpZ251cCIsImUiLCJwcmV2ZW50RGVmYXVsdCIsInB1c2giLCJlcnJvciIsImFsZXJ0IiwibWVzc2FnZSIsImRpdiIsImNsYXNzTmFtZSIsImgyIiwiZm9ybSIsIm9uU3VibWl0IiwiaW5wdXQiLCJ0eXBlIiwicGxhY2Vob2xkZXIiLCJ2YWx1ZSIsIm9uQ2hhbmdlIiwidGFyZ2V0IiwicmVxdWlyZWQiLCJidXR0b24iLCJwIiwic3BhbiIsIm9uQ2xpY2siXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/signup.js\n");
+
+/***/ }),
+
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
 /***/ ((module) => {
 
 module.exports = require("next/router");
 
 /***/ }),
 
-/***/ 689:
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
 /***/ ((module) => {
 
 module.exports = require("react");
 
 /***/ }),
 
-/***/ 997:
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
 /***/ ((module) => {
 
-module.exports = require("react/jsx-runtime");
+module.exports = require("react/jsx-dev-runtime");
 
 /***/ }),
 
-/***/ 745:
+/***/ "firebase/app":
+/*!*******************************!*\
+  !*** external "firebase/app" ***!
+  \*******************************/
 /***/ ((module) => {
 
 module.exports = import("firebase/app");;
 
 /***/ }),
 
-/***/ 401:
+/***/ "firebase/auth":
+/*!********************************!*\
+  !*** external "firebase/auth" ***!
+  \********************************/
 /***/ ((module) => {
 
 module.exports = import("firebase/auth");;
 
 /***/ }),
 
-/***/ 492:
+/***/ "firebase/firestore":
+/*!*************************************!*\
+  !*** external "firebase/firestore" ***!
+  \*************************************/
 /***/ ((module) => {
 
 module.exports = import("firebase/firestore");;
@@ -146,7 +100,7 @@ module.exports = import("firebase/firestore");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [835], () => (__webpack_exec__(266)));
+var __webpack_exports__ = (__webpack_exec__("./pages/signup.js"));
 module.exports = __webpack_exports__;
 
 })();
